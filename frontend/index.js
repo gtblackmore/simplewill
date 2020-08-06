@@ -55,9 +55,7 @@ function fetchUsers(){
   .then(resp => resp.json())
   .then(users => {
     for(const user of users) {
-      console.log("rails", user)
       let u = new User(user)
-      console.log("js", u)
     }
   })
 }
